@@ -63,7 +63,7 @@ library
       OverloadedStrings
   ghc-options: -Wincomplete-patterns -Wunused-do-bind -Wunused-foralls -Wwarnings-deprecations -Wwrong-do-bind -Wmissing-fields -Wmissing-methods -Wmissing-pattern-synonym-signatures -Wmissing-signatures -Werror=incomplete-patterns -fno-warn-orphans
   build-depends:
-      Agda ==2.6.2.1
+      Agda ==2.6.2.2
     , aeson
     , base >=4.7 && <5
     , bytestring

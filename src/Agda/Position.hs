@@ -42,7 +42,7 @@ toAgdaRange table path (LSP.Range start end) = Range
 toAgdaPositionWithoutFile :: ToOffset -> LSP.Position -> PositionWithoutFile
 toAgdaPositionWithoutFile table (LSP.Position line col) = Pn
   ()
-  (fromIntegral (toOffset table (line, col)) + 1)
+  (fromIntegral (toOffset table ((fromInteger . toInteger) line, (fromInteger . toInteger) col)) + 1)
   (fromIntegral line + 1)
   (fromIntegral col + 1)
 
